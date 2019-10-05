@@ -9,13 +9,9 @@ def insertion_sort():
 
     for index in range(1 , len(json_data)):
         insertion_index = index
-        print json_data
-        print "#######################"
         while insertion_index > 0 and json_data[insertion_index - 1] > json_data[insertion_index]:
             json_data[insertion_index-1], json_data[insertion_index] = json_data[insertion_index], json_data[insertion_index-1]
-            print "------------------------------"
             print json_data
-            print "------------------------------"
             insertion_index -= 1
  
 
