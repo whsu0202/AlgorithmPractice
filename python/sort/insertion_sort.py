@@ -11,9 +11,7 @@ def insertion_sort():
         insertion_index = index
         while insertion_index > 0 and json_data[insertion_index - 1] > json_data[insertion_index]:
             json_data[insertion_index-1], json_data[insertion_index] = json_data[insertion_index], json_data[insertion_index-1]
-            print json_data
-            insertion_index -= 1
- 
+            insertion_index -= 1 
 
     return json_data
 
