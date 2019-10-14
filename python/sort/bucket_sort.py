@@ -49,5 +49,5 @@ def bucket_sort(bucket_count=DEFAULT_BUCKET_NUMBER):
     return sorted_elms
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     print bucket_sort()
