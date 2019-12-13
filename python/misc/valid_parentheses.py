@@ -3,26 +3,16 @@
 import unittest
 
 class ValidParentheses:
-    def valid_parentheses(self, string):
-        L_P, R_P, characters = [], [], []
-        input_string = list(string)
-        print input_string
-        for symbl in input_string:
-            if input_string[0] == ")":
+    def valid_parentheses(self, inp_string):
+        p_count = 0
+        for x in inp_string:
+            if x == "(":
+                p_count+=1
+            if x == ")":
+                p_count-=1
+            if p_count < 0:
                 return False
-            elif input_string[-1] == "(":
-                return False
-            elif symbl == "(":
-                L_P.append(symbl)
-            elif symbl == ")":
-                R_P.append(symbl)
-            else:
-                characters.append(symbl)
-    
-        if len(L_P) != len(R_P):
-            return False
-        else:
-            return True
+        return True if p_count == 0 else False
 
 class ValidParenthesesTest(unittest.TestCase):
 
