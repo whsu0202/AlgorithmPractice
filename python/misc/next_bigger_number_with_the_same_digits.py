@@ -2,7 +2,7 @@
 
 def next_bigger(n):
 
-    if type(n) is str or n == "" or n < 1:
+    if type(n) is str or n == "" or n < 10:
         return -1
         
     n2str = str(n)
