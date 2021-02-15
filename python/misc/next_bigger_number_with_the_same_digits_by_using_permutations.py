@@ -18,6 +18,9 @@ def next_bigger(n):
     #        if n_list[y] > n_list[y+1]:
     #            n_list[y], n_list[y+1] = n_list[y+1], n_list[y]
 
+    # Doing the comparision within a list
+    # n_list.index(n)+1 => Find a value's location in a array
+    # and then use the next one to do comparision 
     for i in range(n_list.index(n)+1, len(n_list)):
         if n_list[i] > n:
             return n_list[i]
@@ -26,7 +29,7 @@ def next_bigger(n):
             
 
 if __name__ == "__main__":
-    print next_bigger(123)
-    print next_bigger(123456)
-    print next_bigger(7654321)
-    print next_bigger(7564321)
+    print(next_bigger(123))
+    print(next_bigger(123456))
+    print(next_bigger(7654321))
+    print(next_bigger(7564321))
